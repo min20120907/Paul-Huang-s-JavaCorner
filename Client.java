@@ -12,8 +12,8 @@ class Team {
 	String getName() {
 		return this.name;
 	}
-	
-	String toString() {
+	@Override	
+	public String toString() {
 		return this.name;
 	}
 
@@ -23,7 +23,8 @@ public class Client {
 	public static void main(String args[]) {
 		Team t = new Team("java");
 		System.out.println(t);
-		t.setName()
+		t.setName("c++");
+		System.out.println(t.getName());
 	}
 }
 
