@@ -5,11 +5,15 @@ public class TestEnum {
 			private Test(int v){
 				this.v = v;
 			}
-			String getFirstLetter() {
+			public toString(){
+				return "v="+v;
+			}
+			private static String getFirstLetter() {
 				return A.toString();
 			}
 		}
 	public static void main(String args[]) {
+		Test a = new Test();
 		System.out.println(Test.getFirstLetter());
 	}
 }
