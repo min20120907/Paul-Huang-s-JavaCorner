@@ -31,8 +31,8 @@ public class ResWorker {
 
 		Resource r1 = new Resource();
 		Resource r2 = new Resource();
-
 		new Thread(()->{w1.work(r1,r2);System.out.println("Thread 1 Finished");}).start();
+	
 		new Thread(()->{w2.work(r2,r1);System.out.println("Thread 2 Finished");}).start();
 	}
 }
